@@ -146,4 +146,7 @@ BOARD_AVB_VBMETA_VENDOR_ROLLBACK_INDEX_LOCATION := 3
 # VNDK
 BOARD_VNDK_VERSION := current
 
+# Wifi
+WIFI_HIDL_FEATURE_DUAL_INTERFACE := true
+
 -include vendor/realme/apollow/BoardConfigVendor.mk
