@@ -69,8 +69,11 @@ function blob_fixup {
         vendor/lib*/hw/audio.primary.mt6833.so)
             "${PATCHELF}" --add-needed "libshim_audio.so" "${2}"
             ;;
+        vendor/lib*/libudf.so)
+            "${PATCHELF}" --replace-needed "libunwindstack.so" "libunwindstack-v30.so" "$2"
+            ;;
         vendor/lib64/libwifi-hal-mtk.so)
-            "$PATCHELF" --set-soname libwifi-hal-mtk.so "${2}"
+            "${PATCHELF}" --set-soname libwifi-hal-mtk.so "${2}"
             ;;
         vendor/lib*/hw/vendor.mediatek.hardware.pq@2.6-impl.so)
             "${PATCHELF}" --replace-needed "libutils.so" "libutils-v32.so" "${2}"
