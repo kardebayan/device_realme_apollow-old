@@ -41,6 +41,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     libaudiofoundation.vendor \
+    libaudiopreprocessing \
     libtinycompress \
     libtinyxml \
     tinymix

@@ -22,7 +22,6 @@ vendor/lib/libaudioprimarydevicehalifclient.so
 vendor/lib/libaudiotoolkit_vendor.so
 vendor/lib/libaudio_engineer_test.so
 vendor/lib/libaudio_param_parser-vnd.so
-vendor/lib/soundfx/libaudiopreprocessing_mtk.so
 vendor/lib64/libaudiocompensationfilterc.so
 vendor/lib64/libaudiocompensationfilter_vendor.so
 vendor/lib64/libaudiocomponentenginec.so
@@ -35,7 +34,6 @@ vendor/lib64/libaudioprimarydevicehalifclient.so
 vendor/lib64/libaudiotoolkit_vendor.so
 vendor/lib64/libaudio_engineer_test.so
 vendor/lib64/libaudio_param_parser-vnd.so
-vendor/lib64/soundfx/libaudiopreprocessing_mtk.so
 
 # Audio-Hardware
 system_ext/lib/vendor.mediatek.hardware.audio@6.1.so
