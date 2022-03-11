@@ -87,6 +87,14 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.keymaster@4.0.vendor
 
+PRODUCT_PACKAGES += \
+    libkeymaster4.vendor:64 \
+    libkeymaster4support.vendor:64 \
+    libkeymaster_portable.vendor:64 \
+    libkeymaster_messages.vendor:64 \
+    libsoft_attestation_cert.vendor:64 \
+    libpuresoftkeymasterdevice.vendor:64
+
 # Lights
 PRODUCT_PACKAGES += \
     android.hardware.light-service.apollow
@@ -155,6 +163,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/wifi/p2p_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/p2p_supplicant_overlay.conf \
     $(LOCAL_PATH)/configs/wifi/wpa_supplicant.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant.conf \
     $(LOCAL_PATH)/configs/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf
+
+PRODUCT_PACKAGES += \
+    libkeystore-wifi-hidl \
+    libkeystore-engine-wifi-hidl
 
 # Inherit vendor
 $(call inherit-product, vendor/realme/apollow/apollow-vendor.mk)
