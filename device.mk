@@ -329,11 +329,13 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf
 
 PRODUCT_PACKAGES += \
-    android.hardware.wifi.supplicant@1.3.vendor \
-    android.hardware.wifi.hostapd@1.2.vendor
+    android.hardware.wifi.supplicant@1.3.vendor
 
 PRODUCT_PACKAGES += \
     android.hardware.wifi@1.0-service-lazy.apollow
+
+PRODUCT_PACKAGES += \
+    hostapd
 
 PRODUCT_PACKAGES += \
     libkeystore-wifi-hidl \
