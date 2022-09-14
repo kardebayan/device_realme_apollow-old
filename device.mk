@@ -61,6 +61,14 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.graphics.composer@2.1-service
 
+PRODUCT_PACKAGES += \
+    android.hardware.graphics.common@1.2.vendor \
+    android.hardware.graphics.mapper@4.0.vendor \
+    android.hardware.graphics.allocator@4.0.vendor
+
+PRODUCT_PACKAGES += \
+    libdrm.vendor
+
 TARGET_SCREEN_DENSITY := 440
 TARGET_SCREEN_HEIGHT := 2400
 TARGET_SCREEN_WIDTH := 1080
