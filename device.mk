@@ -53,6 +53,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.3.vendor
 
+# Disable SF configstore
+PRODUCT_PACKAGES += \
+    disable_configstore
+
 # Display
 TARGET_SCREEN_DENSITY := 440
 TARGET_SCREEN_HEIGHT := 2400
