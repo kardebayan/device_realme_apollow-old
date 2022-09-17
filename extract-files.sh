@@ -58,6 +58,9 @@ function blob_fixup {
         vendor/lib*/hw/audio.primary.mt6833.so)
             "${PATCHELF}" --add-needed "libshim_audio.so" "${2}"
             ;;
+        vendor/lib64/libwifi-hal-mtk.so)
+            "$PATCHELF" --set-soname libwifi-hal-mtk.so "${2}"
+            ;;
     esac
 }
 
