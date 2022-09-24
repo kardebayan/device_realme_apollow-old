@@ -23,7 +23,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/audio/usb_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/usb_audio_policy_configuration.xml
 
 PRODUCT_PACKAGES += \
-    android.hardware.audio.service \
+    android.hardware.audio.service.mediatek \
     android.hardware.audio@6.0-impl \
     android.hardware.audio.effect@6.0-impl \
     android.hardware.bluetooth.audio@2.0-impl
