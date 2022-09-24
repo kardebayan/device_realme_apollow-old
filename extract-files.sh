@@ -58,6 +58,11 @@ function blob_fixup {
         lib/libsink.so)
             "${PATCHELF}" --add-needed "libshim_vtservice.so" "${2}"
             ;;
+        vendor/bin/hw/vendor.mediatek.hardware.mtkpower@1.0-service)
+            ;&
+        vendor/lib64/android.hardware.power-service-mediatek.so)
+            "${PATCHELF}" --replace-needed "android.hardware.power-V1-ndk_platform.so" "android.hardware.power-V1-ndk.so" "${2}"
+            ;;
         vendor/lib*/hw/audio.primary.mt6833.so)
             "${PATCHELF}" --add-needed "libshim_audio.so" "${2}"
             ;;
