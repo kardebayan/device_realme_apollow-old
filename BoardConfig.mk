@@ -54,4 +54,8 @@ TARGET_BOARD_PLATFORM := mt6833
 # Security patch level
 VENDOR_SECURITY_PATCH := 2022-06-05
 
+# Verified Boot
+BOARD_AVB_ENABLE := true
+BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flags 3
+
 -include vendor/realme/apollow/BoardConfigVendor.mk
