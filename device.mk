@@ -143,7 +143,8 @@ PRODUCT_COPY_FILES += \
 
 # USB
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
-    ro.adb.nonblocking_ffs=0
+    ro.adb.nonblocking_ffs=0 \
+    persist.adb.nonblocking_ffs=0
 
 # WiFi
 PRODUCT_COPY_FILES += \
