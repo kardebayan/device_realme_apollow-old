@@ -120,6 +120,9 @@ PRODUCT_PACKAGES += \
     fstab.mt6833 \
     ueventd.mt6833.rc
 
+PRODUCT_PACKAGES += \
+    init.recovery.mt6833.rc
+
 # Seccomp
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/seccomp/mediacodec.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediacodec.policy \
