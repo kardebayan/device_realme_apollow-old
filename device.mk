@@ -53,6 +53,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.3.vendor
 
+# Display
+TARGET_SCREEN_DENSITY := 440
+TARGET_SCREEN_HEIGHT := 2400
+TARGET_SCREEN_WIDTH := 1080
+
 # fastbootd
 PRODUCT_PACKAGES += \
     fastbootd
