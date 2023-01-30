@@ -13,7 +13,7 @@ wifi.tethering.interface=ap0
 #
 
 # Audio
-ro.config.vc_call_vol_steps=7
+ro.config.vc_call_vol_steps=15
 
 ro.opengles.version=196610
 # ro.kernel.qemu=1
