@@ -47,6 +47,7 @@ PRODUCT_PACKAGES += \
     tinymix
 
 PRODUCT_PACKAGES += \
+    BesLoudness \
     MtkInCallService
 
 # Bluetooth
