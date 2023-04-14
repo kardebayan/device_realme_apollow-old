@@ -63,6 +63,9 @@ TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 # RIL
 ENABLE_VENDOR_RIL_SERVICE := true
 
+# Recovery
+TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.mt6833
+
 # Security patch level
 VENDOR_SECURITY_PATCH := 2022-06-05
 
