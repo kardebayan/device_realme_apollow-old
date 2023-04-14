@@ -1,0 +1,8 @@
+libOpenCL.so
+libAlgoProcess.so
+libAncHumBokeh.so
+libstblur_api.so
+libAncHumVideoBase.so
+libmtkisp_metadata.so
+vendor.mediatek.hardware.camera.isphal@1.0.so
+libarcsoft_scbokeh_video.so
