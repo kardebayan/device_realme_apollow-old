@@ -138,6 +138,15 @@ LOCAL_MODULE_PATH  := $(TARGET_OUT_VENDOR_ETC)
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
+LOCAL_MODULE       := fstab.mt6833_ramdisk
+LOCAL_MODULE_STEM  := fstab.mt6833
+LOCAL_MODULE_TAGS  := optional
+LOCAL_MODULE_CLASS := ETC
+LOCAL_SRC_FILES    := etc/fstab.mt6833
+LOCAL_MODULE_PATH  := $(TARGET_RAMDISK_OUT)/system/etc
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
 LOCAL_MODULE       := fstab.mt6833
 LOCAL_MODULE_TAGS  := optional
 LOCAL_MODULE_CLASS := ETC
