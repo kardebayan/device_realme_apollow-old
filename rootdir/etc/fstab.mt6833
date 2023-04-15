@@ -14,7 +14,7 @@ vendor /vendor ext4 ro wait,,avb,logical,first_stage_mount
 product /product ext4 ro wait,,avb,logical,first_stage_mount
 
 
-
+system_ext /system_ext ext4 ro wait,,avb,logical,first_stage_mount
 
 
 /dev/block/by-name/metadata /metadata ext4 noatime,nosuid,nodev,discard wait,check,formattable,first_stage_mount
