@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ * Copyright (c) 2006, The Android Open Source Project
+ *
+ * SPDX-License-Identifier: Apache-2.0
+*/
+-->
+<resources>
+
+    <!-- the padding on the top of the statusbar (usually 0) -->
+    <dimen name="status_bar_padding_top">8dp</dimen>
+
+    <!-- the padding on the start of the statusbar -->
+    <dimen name="status_bar_padding_start">0dp</dimen>
+
+    <!-- the padding on the end of the statusbar -->
+    <dimen name="status_bar_padding_end">10dp</dimen>
+
+    <!-- Set fingerprint/power button vertical position -->
+    <dimen name="physical_power_button_center_screen_location_y">880px</dimen>
+    <dimen name="physical_fingerprint_sensor_center_screen_location_y">880px</dimen>
+
+    <!-- Location on the screen of the center of the fingerprint sensor -->
+    <dimen name="physical_fingerprint_sensor_center_screen_location_x">1080px</dimen>
+</resources>
