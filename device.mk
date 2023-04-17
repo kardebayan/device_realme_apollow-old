@@ -40,6 +40,7 @@ PRODUCT_PACKAGES += \
     libshim_audio
 
 PRODUCT_PACKAGES += \
+    libaudiofoundation.vendor \
     libtinycompress \
     libtinyxml \
     tinymix
@@ -103,6 +104,7 @@ PRODUCT_PACKAGES += \
 
 # HIDL
 PRODUCT_PACKAGES += \
+    android.hidl.allocator@1.0.vendor \
     libhidltransport \
     libhidltransport.vendor \
     libhwbinder \
@@ -202,6 +204,11 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.vulkan.deqp.level-2020-03-01.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.vulkan.deqp.level.xml \
     frameworks/native/data/etc/handheld_core_hardware.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/handheld_core_hardware.xml
 
+# Power
+PRODUCT_PACKAGES += \
+    android.hardware.power-V1-ndk.vendor \
+    android.hardware.power@1.2.vendor
+
 # Public Libraries
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
@@ -211,7 +218,8 @@ PRODUCT_PACKAGES += \
     android.hardware.radio@1.5.vendor \
     android.hardware.radio.config@1.2.vendor \
     android.hardware.radio.deprecated@1.0.vendor \
-    android.hardware.radio-V1.4-java
+    android.hardware.radio-V1.4-java \
+    android.hardware.secure_element@1.2.vendor
 
 # Ramdisk
 PRODUCT_PACKAGES += \
@@ -269,6 +277,10 @@ PRODUCT_SOONG_NAMESPACES += \
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     ro.adb.nonblocking_ffs=0 \
     persist.adb.nonblocking_ffs=0
+
+PRODUCT_PACKAGES += \
+    android.hardware.usb@1.1.vendor \
+    android.hardware.usb.gadget@1.1.vendor
 
 # VNDK
 PRODUCT_COPY_FILES += \
