@@ -10,12 +10,12 @@ system /system ext4 ro wait,,avb=vbmeta_system,logical,first_stage_mount,avb_key
 
 vendor /vendor ext4 ro wait,,avb,logical,first_stage_mount
 
-
 product /product ext4 ro wait,,avb,logical,first_stage_mount
 
 
 system_ext /system_ext ext4 ro wait,,avb,logical,first_stage_mount
 
+odm                                                  /odm                   ext4    ro,barrier=1                                            wait,logical,first_stage_mount,avb_keys=/vendor/etc/oplus_avb.pubkey,nofail
 
 /dev/block/by-name/metadata /metadata ext4 noatime,nosuid,nodev,discard wait,check,formattable,first_stage_mount
 
@@ -49,9 +49,9 @@ system_ext /system_ext ext4 ro wait,,avb,logical,first_stage_mount
 
 /dev/block/by-name/boot /boot emmc defaults first_stage_mount,nofail,
 
+/dev/block/by-name/opporeserve2      /mnt/vendor/opporeserve             ext4   nosuid,nodev,noatime,barrier=1                           wait,check,first_stage_mount,nofail
 
-
-
+/dev/block/by-name/my_custom                    /my_custom           ext4    ro,barrier=1,discard    wait
 
 /dev/block/by-name/vbmeta_vendor /vbmeta_vendor emmc defaults first_stage_mount,nofail,
 /dev/block/by-name/vbmeta_system /vbmeta_system emmc defaults first_stage_mount,nofail,,avb=vbmeta
