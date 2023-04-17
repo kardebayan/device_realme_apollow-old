@@ -223,7 +223,6 @@ PRODUCT_PACKAGES += \
     meta_init.project.rc \
     meta_init.rc \
     multi_init.rc \
-    fstab.emmc \
     fstab.enableswap \
     fstab.mt6833_ramdisk \
     fstab.mt6833 \
