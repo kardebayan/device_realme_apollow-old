@@ -47,13 +47,15 @@ vendor/lib64/hw/audio.r_submix.mt6833.so
 vendor/lib64/hw/audio.usb.mt6833.so
 vendor/lib64/vendor.mediatek.hardware.audio@6.1.so
 
-# Audio-configs
+# Audio (Configs) - from sys_mssi_64_cn_armv82-user 13 TP1A.220905.001 1672290699418 release-keys
+odm/etc/audio/audio_param/HpImpedance_AudioParam.xml|71ccac7345d9361f0b198a82b287bbc8decc3197
+
+# Audio (Configs)
 odm/etc/audio/audio_device/audio_device.xml
 odm/etc/audio/audio_device/common/audio_device.xml
 odm/etc/audio/audio_param/AudioParamOptions.xml
 odm/etc/audio/audio_param/BtInfo_AudioParam.xml
 odm/etc/audio/audio_param/BtInfo_ParamUnitDesc.xml
-odm/etc/audio/audio_param/HpImpedance_AudioParam.xml
 odm/etc/audio/audio_param/HpImpedance_ParamUnitDesc.xml
 odm/etc/audio/audio_param/MicInfo_AudioParam.xml
 odm/etc/audio/audio_param/MicInfo_ParamUnitDesc.xml
