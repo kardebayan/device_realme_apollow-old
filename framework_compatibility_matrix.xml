@@ -568,11 +568,43 @@
             <instance>default</instance>
         </interface>
     </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.oplus.hardware.charger</name>
+        <version>1.0</version>
+        <interface>
+            <name>ICharger</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
     <hal format="hidl" optional="false">
         <name>vendor.oplus.hardware.cryptoeng</name>
         <version>1.0</version>
         <interface>
             <name>ICryptoeng</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.oplus.hardware.engcamera</name>
+        <version>1.0</version>
+        <interface>
+            <name>IEngCamera</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.oplus.hardware.engineer</name>
+        <version>1.0</version>
+        <interface>
+            <name>IEngineer</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.oplus.hardware.fido.fidoca</name>
+        <version>1.0</version>
+        <interface>
+            <name>IFidoDaemon</name>
             <instance>default</instance>
         </interface>
     </hal>
@@ -585,12 +617,44 @@
         </interface>
     </hal>
     <hal format="hidl" optional="true">
+        <name>vendor.oplus.hardware.orms.ormsHalService</name>
+        <version>1.0</version>
+        <interface>
+            <name>IOrmsHalService</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
         <name>vendor.oplus.hardware.radio</name>
         <version>1.0</version>
         <interface>
             <name>IOplusRadio</name>
             <instance>oplus_slot1</instance>
             <instance>oplus_slot2</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.oplus.hardware.stability.oplus_project</name>
+        <version>1.0</version>
+        <interface>
+            <name>IOplusProject</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.oplus.hardware.thermalmntcfg</name>
+        <version>1.0</version>
+        <interface>
+            <name>IThermalMntCfg</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.oplus.hardware.touch</name>
+        <version>1.0</version>
+        <interface>
+            <name>IOplusTouch</name>
+            <instance>default</instance>
         </interface>
     </hal>
     <hal format="hidl" optional="true">
