@@ -78,6 +78,9 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.allocator@4.0.vendor
 
 PRODUCT_PACKAGES += \
+    android.hardware.graphics.common-V2-ndk_platform.vendor
+
+PRODUCT_PACKAGES += \
     libdrm.vendor
 
 TARGET_SCREEN_DENSITY := 440
