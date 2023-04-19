@@ -1,0 +1,63 @@
+/*
+ * Copyright (C) 2017 The Android Open Source Project
+ *
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
+package vendor.oplus.hardware.biometrics.fingerprint@2.1;
+
+import IBiometricsFingerprintClientCallback;
+
+interface IBiometricsFingerprint {
+
+  setNotify(IBiometricsFingerprintClientCallback clientCallback) generates (uint64_t deviceId);
+
+  preEnroll() generates (uint64_t authChallenge);
+
+  enroll(uint8_t[69] hat, uint32_t gid, uint32_t timeoutSec) generates (RequestStatus debugErrno);
+
+  postEnroll() generates (RequestStatus debugErrno);
+
+  getAuthenticatorId() generates (uint64_t AuthenticatorId);
+
+  cancel() generates (RequestStatus debugErrno);
+
+  enumerate() generates (RequestStatus debugErrno);
+
+  remove(uint32_t gid, uint32_t fid) generates (RequestStatus debugErrno);
+
+  setActiveGroup(uint32_t gid, string storePath) generates (RequestStatus debugErrno);
+
+  authenticate(uint64_t operationId, uint32_t gid) generates (RequestStatus debugErrno);
+
+  pauseEnroll() generates (RequestStatus debugErrno);
+  
+  pauseIdentify() generates (RequestStatus debugErrno);
+  
+  continueEnroll() generates (RequestStatus debugErrno);
+  
+  setScreenState(FingerprintScreenState ScreenState);
+  
+  getAlikeyStatus() generates (RequestStatus debugErrno);
+  
+  continueIdentify() generates (RequestStatus debugErrno);
+  
+  authenticateAsType(uint64_t auth, uint32_t type, FingerprintAuthType AuthType) generates (RequestStatus debugErrno);
+
+  getEngineeringInfo(uint32_t info) generates (RequestStatus debugErrno);
+
+  sendFingerprintCmd(int32_t cmd, vec<int8_t> CmdId) generates (RequestStatus debugErrno);
+
+  dynamicallyConfigLog(uint32_t log) generates (RequestStatus debugErrno);
+  
+  setTouchEventListener() generates (RequestStatus debugErrno);
+  
+  getEnrollmentTotalTimes() generates (RequestStatus debugErrno);
+  
+  cleanUp() generates (RequestStatus debugErrno);
+  
+  touchUp() generates (RequestStatus debugErrno);
+  
+  touchDown() generates (RequestStatus debugErrno);
+  
+};

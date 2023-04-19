@@ -1,0 +1,34 @@
+/*
+ * Copyright (C) 2017 The Android Open Source Project
+ *
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
+package vendor.oplus.hardware.biometrics.fingerprint@2.1;
+
+/* This HAL interface communicates asynchronous results from the
+   fingerprint driver in response to user actions on the fingerprint sensor
+*/
+interface IBiometricsFingerprintClientCallback {
+
+    oneway onEnrollResult(uint64_t deviceId, uint32_t fingerId, uint32_t groupId, uint32_t remaining);
+
+    oneway onAcquired(uint64_t deviceId, FingerprintAcquiredInfo acquiredInfo, int32_t vendorCode);
+
+    oneway onAuthenticated(uint64_t deviceId, uint32_t fingerId, uint32_t groupId, vec<uint8_t> token);
+
+    oneway onError(uint64_t deviceId, FingerprintError error, int32_t vendorCode);
+
+    oneway onRemoved(uint64_t deviceId, uint32_t fingerId, uint32_t groupId, uint32_t remaining);
+
+    oneway onEnumerate(uint64_t deviceId, uint32_t fingerId, uint32_t groupId, uint32_t remaining);
+
+    oneway onTouchUp(uint64_t deviceId);
+    oneway onTouchDown(uint64_t deviceId);
+    oneway onSyncTemplates(uint64_t deviceId, vec<uint32_t> fingerId, uint32_t remaining);
+    oneway onFingerprintCmd(int32_t deviceId, vec<uint32_t> groupId, uint32_t remaining);
+    oneway onImageInfoAcquired(uint32_t type, uint32_t quality, uint32_t match_score);
+    oneway onMonitorEventTriggered(uint32_t type, string data);
+    oneway onEngineeringInfoUpdated(uint32_t length, vec<uint32_t> keys, vec<string> values);
+
+};
