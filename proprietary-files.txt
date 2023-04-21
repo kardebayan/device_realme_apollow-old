@@ -13,13 +13,13 @@ vendor/lib64/libaalservice.so
 # ADSP
 odm/lib64/libadsprpc.so
 
-# AEE
-vendor/lib/libaedv.so
-vendor/lib/libladder.so
-vendor/lib/libudf.so
-vendor/lib64/libaedv.so
-vendor/lib64/libladder.so
-vendor/lib64/libudf.so
+# AEE - from sys_mssi_64_cn_armv82-user 13 TP1A.220905.001 1680259588115 release-keys
+vendor/lib/libaedv.so|3b93f72ef0f78cf7224f01bfd27b51e651346661
+vendor/lib/libladder.so|f1897ab7de1baca1d90950d21429cea51a146ecc
+vendor/lib/libudf.so|e466d9268cfa44d6ffbfef5147d9d0cc2170c411
+vendor/lib64/libaedv.so|fee02aec424ebd79a82d646a0087aac0e85508fe
+vendor/lib64/libladder.so|3d21a030c097d931c41c07d41ae2a11596a3f2d8
+vendor/lib64/libudf.so|f57a4f63592b62c2de72b377021327756fc5fac1
 
 # AVB
 vendor/etc/oplus_avb.pubkey
